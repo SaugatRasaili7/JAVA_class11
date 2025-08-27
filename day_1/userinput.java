@@ -11,6 +11,6 @@ public class userinput{
         // Printing the number
         System.out.println(number);
 
-        scanner.close();
+        scanner.close(); 
     }
-}
+}                                 
