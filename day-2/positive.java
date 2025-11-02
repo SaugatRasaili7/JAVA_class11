@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class positive{
+public class Positive{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -9,7 +9,7 @@ public class positive{
         int num = input.nextInt();
 
         if(num<0){
-            System.out.println("The number" + num + "is Negative");
+            System.out.println("The number " + num + "is Negative");
 
         }
         else{
