@@ -4,9 +4,9 @@ public class  Numberguessingadvance {
    int num2;
  
 
-   Numberguessingadvance(int num){
-    secretNum = num;
-
+   Numberguessingadvance(){
+    secretNum =(int)( Math.random()*100)+1;
+    System.out.println("secret number"+ secretNum);
 
    }
    
@@ -15,12 +15,14 @@ public class  Numberguessingadvance {
        Scanner input = new Scanner(System.in);
        boolean check = true;
         int attempt =1;
-
+  
      while(check){
         System.out.println("Enter the number from 1 to 100");
         num2 = input.nextInt();
 
-        if(num2>60 && num2<100){
+        int difference = secretNum - num2;
+
+        if(num2>60 && num2<100){    
             System.out.println("Your number " + num2 + " is closer to the guess number");
             attempt++;
         }
@@ -43,17 +45,12 @@ public class  Numberguessingadvance {
         }
 
         
-        else if(num2<80 && num2>70){
+        else if(num2<75 && num2>70){
             System.out.println("Your number " + num2 + " is nearer to guess number");
             attempt++;
         }
 
-        
-        else if(num2<75 &&num2>70){
-            System.out.println("Your number " + num2 + " is very nearer to guess number");
-            attempt++;
-        }
-      
+       
          else if(num2==secretNum){
                System.out.println("Your number " + num2 + " guess is correct");
                check = false;
@@ -76,7 +73,7 @@ public class  Numberguessingadvance {
 
    public static void main(String[] aargs){
  
-     Numberguessingadvance ng = new Numberguessingadvance(76);
+     Numberguessingadvance ng = new Numberguessingadvance();
      ng.check();
 
    }
