@@ -1,21 +1,21 @@
 import java.util.Scanner;
-public class Userinputarray2{
+public class Userinputarray3{
   public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     String a[] = new String[2];
+     String a[] = new String[5];
 
-     System.out.println("Enter the names :");
 
      for(int i=0; i<a.length; i++){
+        
+     System.out.println("Enter the names of a " + "[" + i + "]" + ":");
        a[i] = input.nextLine();
      }
 
      
-     System.out.println("The names are :");
 
      for(int i=0; i<a.length; i++){
-        System.out.println(a[i]);
+        System.out.println("The name of a "+ "[" + i + "]" +"is :" + a[i]);
       
      }
 
