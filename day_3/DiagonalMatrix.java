@@ -13,7 +13,7 @@ public class DiagonalMatrix{
      }
 
       
-      // Diagonal's Sum in matrix ;
+ 
    for (int i = 0; i < 2; i++) {
             System.out.print(matrix[i][i] + " ");
         }
